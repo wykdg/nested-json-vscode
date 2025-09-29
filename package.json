@@ -1,0 +1,49 @@
+{
+  "name": "nested-json-formatter",
+  "displayName": "Nested JSON Formatter",
+  "description": "递归解析嵌套 JSON 并格式化",
+  "version": "1.0.",
+  "publisher": "wykdg",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:nestedJson.format"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "package": "vsce package",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "@types/vscode": "^1.80.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "nestedJson.format",
+        "title": "Nested JSON: 格式化 JSON"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "nestedJson.format",
+          "when": "editorLangId == json",
+          "group": "1_modification"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "nestedJson.format",
+          "when": "editorLangId == json",
+          "group": "navigation",
+          "priority": 1
+        }
+      ]
+    }
+  }
+}
