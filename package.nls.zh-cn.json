@@ -1,0 +1,4 @@
+{
+  "extension.description": "递归解析嵌套 JSON 并格式化",
+  "command.format.title": "Nested JSON: 格式化"
+}

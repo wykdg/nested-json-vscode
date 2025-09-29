@@ -40,7 +40,8 @@ export function activate(context: vscode.ExtensionContext) {
 
     const parsed = tryParse(text);
     if (parsed === null) {
-      vscode.window.showErrorMessage("不是合法的 JSON");
+      // 使用 vscode.l10n.t() 来显示本地化消息
+      vscode.window.showErrorMessage(vscode.l10n.t("Not a valid JSON"));
       return;
     }
 

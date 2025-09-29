@@ -1,0 +1,4 @@
+{
+  "extension.description": "Recursively parse and format nested JSON.",
+  "command.format.title": "Nested JSON: Format"
+}
