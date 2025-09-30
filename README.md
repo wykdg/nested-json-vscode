@@ -1,6 +1,6 @@
 # Nested JSON Formatter / 嵌套 JSON 格式化工具
 
-A VS Code extension to recursively parse and format stringified JSON nested within a JSON structure.
+A VS Code extension to recursively parse and format stringified JSON nested within a JSON structure.  
 一个 VS Code 插件，可以**递归解析并格式化**嵌套在 JSON 结构中的字符串化 JSON。
 
 ---

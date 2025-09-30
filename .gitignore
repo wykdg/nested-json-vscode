@@ -1,0 +1,33 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Output directories
+out/
+dist/
+coverage/
+tmp/
+temp/
+
+# Build artifacts
+*.vsix
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode specific
+.vscode
+.vscode-test/
+.vscode-test-web/
+.history/
